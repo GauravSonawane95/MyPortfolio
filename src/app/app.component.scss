@@ -1,0 +1,61 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: block;
+    width: 300px;
+    height:110%;
+    position: absolute;
+  background-image: url("https://images.pexels.com/photos/2290912/pexels-photo-2290912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+background-position-x:30%;
+background-position-y: 200px;
+border-radius: 5px;
+}
+  .navbar a {
+      color: rgb(73, 73, 73);
+      text-align: left;
+     
+     width: 100%;
+    font-size: 18px;
+      font-style: italic;
+      
+  }
+
+  .navbar a:hover {
+      color: #3b3b3b;
+      background-color: #e7e7e7;
+      border-radius: 5px;
+      
+     
+    
+  }
+  .content {
+    padding: 20px;
+    position:relative;
+    margin-left: 281px;
+}
+
+
+.testimonial-card .card-up {
+    height: 140px;
+    overflow: hidden;
+    
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    }
+   
+    .testimonial-card .avatar {
+    width: 110px;
+    margin-top: -60px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    }
+
+    h2{
+        padding: 25px;
+         background-image:  url("https://images.pexels.com/photos/3137068/pexels-photo-3137068.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+         color: rgb(216, 216, 216);
+         margin-left: -20;
+     }

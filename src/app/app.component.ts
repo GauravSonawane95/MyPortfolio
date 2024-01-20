@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myport';
+  Name:string="Gaurav Sonawane";
+  Designation:string="Angular Developer/Front End Developer"
 }
