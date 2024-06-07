@@ -1,15 +1,53 @@
 <div class="content bg">
     <h2>Introduction</h2>
-    <section id="introduction" style="margin-left: 15px;">
+    <div id="introduction" class="intro-content">
 
         <!-- Your introduction content here -->
-        <p>Frontend Developer with expertise in JavaScript, TypeScript, HTML5, CSS3, Bootstrap, Angular
-            Material, and Angular framework. Creating seamless web experiences.Seeking opportunities to innovate and
-            excel in a collaborative environment.An MCA graduate seeking opportunities to apply technical expertise and
-            contribute to a progressive organization's success. Committed to continuous learning and professional
-            growth.</p>
+        <p>{{intro}}</p>
+        <h4>Skills</h4>
+        <p class="scroll">• Programming Languages : TypeScript, JavaScript <br>
+            • Frameworks : Angular, Bootstrap <br>
+            • Web Technology : Angular, HTML5, JavaScript, CSS, Flexbox, Angular CLI, Angular Material, Photoshop Illustrator.<br>
+            • Debugging Tools : Google Chrome Web Debugger Development Tools <br>
+            • IDE/Editors : Visual Studio Code <br>
+            • Proficient in Angular, TypeScript, JavaScript, HTML, CSS, and Bootstrap <br>
+            • Rest API and HTTPs <br>
+            • Experience in developing responsive and mobile-friendly web applications <br>
+            • Strong understanding of software development principles and best practices <br>
+            • Excellent problem-solving and debugging skills <br>
+            • Ability to work collaboratively in a team environment.
+        </p>
+
+        <div class="skills-container">
+            <div class="card p-4 skill-card" *ngFor="let item of skills">
+                <img class="card-img-top skill-img" [src]="item.img" alt="{{item.name}}">
+                <p class="card-text skill-text">{{item.name}}</p>
+            </div>
+        </div>
+
+        <h4 class="mt-2">Education</h4>
+        <p>MCA graduate from D Y Patil Institute of MCA and Management with a strong foundation in computer applications and technology.</p>
+        <h3>Master of Computer Application</h3>
+        <p>D Y Patil Institute of MCA and Management</p>
+        <p>Akurdi, Pune, Maharashtra</p>
+        <h3>Bachelor of Computer Application</h3>
+        <p>KCE's Moolji Jetha College</p>
+        <p>Jalgaon, Maharashtra</p>
+        <br>
+        <a href="/assets/GSSResume.pdf" download="GSSResume.pdf">
+            <button class="btn btn-secondary download-btn"><i>DOWNLOAD RESUME</i></button>
+        </a>
+    </div>
+</div>
+
+<!-- <div class="content bg">
+    <h2>Introduction</h2>
+    <div id="introduction" style="margin-left: 15px;">
+
+        
+        <p>{{intro}}</p>
             <h4>Skills</h4>
-            <p>•Programming Languages : TypeScript, JavaScript <br>
+            <p class="scroll">•Programming Languages : TypeScript, JavaScript <br>
                 • Frameworks : Angular, Bootstrap 
                • Web Technology : Angular, HTML5, JavaScript, CSS, Flexbox, Angular CLI, Angular Material,photoshop illustrator.<br>
                • Debugging Tools : Google Chrome Web Debugger Development Tools <br>
@@ -20,7 +58,16 @@
                • Strong understanding of software development principles and best practices <br>
                • Excellent problem-solving and debugging skills <br>
                • Ability to work collaboratively in a team environment.</p>
-        <h4>Education</h4>
+
+               <div class="card,p-4" style="max-width: 12rem;display: inline-block;margin: 10px;" *ngFor="let item of skills">
+        
+                <img class="card-img-top" style="height: 3rem;width:auto;margin: auto;display: flex;" src="{{item.img}}">
+                  <p class="card-text" style="text-align: center;font-size: 12px;">{{item.name}}</p>
+                
+              </div>
+<br><br>
+
+        <h4 class="mt-2">Education</h4>
         <p>MCA graduate from D Y Patil Institute of MCA and Management with a strong foundation in computer applications
             and technology.</p>
         <h3>Master of Computer Application</h3>
@@ -30,8 +77,9 @@
         <p>KCE's Moolji Jetha College</p>
         <p>Jalgoan,Maharashtra</p>
         <br>
-        <a href="/src/assets/GSSResume.pdf" download>
+        <a href="/assets/GSSResume.pdf" download="GSSResume.pdf">
             <button class="btn btn-secondary" style="width: 100%;"><i>DOWNLOAD RESUME</i></button>
-          </a>
-    </section>
-</div>
+        </a>
+    </div>
+
+</div> -->

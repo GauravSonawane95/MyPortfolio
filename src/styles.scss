@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import "/node_modules/bootstrap/scss/bootstrap.scss" ;
-@import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css" ;
+
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
 
   @import 'https://fonts.googleapis.com/css2?family=Anek+Latin:wght@800&family=Caveat&family=Fascinate&family=Noto+Sans&family=Open+Sans&family=Roboto&display=swap';
@@ -9,16 +9,13 @@
 *{
     font-family: "cabin";
    
-}
+};
 h2{
   // background-image:  url(" ");
-margin-top: -20px;
-width: 100%;
-background-size:auto;
+
+
+text-align: center;
 font-style: italic;
-}
-p{
-  font-style: italic;
-}
+};
 
 

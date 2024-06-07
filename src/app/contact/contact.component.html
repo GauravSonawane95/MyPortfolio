@@ -1,38 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    
+    <style>
+      /* Include the CSS from above here */
+    </style>
+</head>
+<body>
 <div class="content bg">
     <h2>Contact</h2>
-    <section id="contact" style="margin-left: 15px;">
-        
-        <!-- Your contact information or form here -->
+    <section id="contact">
         <p>Feel free to get in touch!</p>
-        
+
+        <h5>Address</h5>
+        <p>Address Line 1:<br> Gaurav Sonawane <br> 1225, Hudco, Pimprala,<br> Jalgoan, Maharashtra<br>425001</p>
+        <p>Address Line 2:<br> Gaurav Sonawane <br> 202 , Renuka Niwas ,Belekar Vasti Near Ambedkar Chowk,<br> Warje, Pune, Maharashtra<br>411052</p>
+
+        <h5 class="mt-2">Mobile - (+91)-8806687703</h5>
+        <h5>E-Mail -  <a href="mailto:sonawanegs95@gmail.com">sonawanegs95@gmail.com</a> </h5>
+
         <form>
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <div class="text-danger">Name is required</div>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                <div class="text-danger">Enter a valid email</div>
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3"
-                    placeholder="Write your message here"></textarea>
+                <textarea class="form-control" id="message" rows="3" placeholder="Write your message here"></textarea>
+                <div class="text-danger">Message is required</div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" disabled>Submit</button>
         </form><br><br>
+
         <div class="mt-4">
-<h4 class="center">
-    You can also visit me here, will be happy to see you.
-</h4>
-<div class="center">
-    <a href="mailto:sonawanegs95@gmail.com" class="fa fa-google"></a>
-    <a href="https://www.linkedin.com/in/gaurav-sonawane-884950144" class="fa fa-linkedin"></a>
-    <a href="https://www.github.com/GauravSonawane95" class="fa fa-github"></a>
-    <a href="https://www.instagram.com/bthefantastico" class="fa fa-instagram"></a>
-    <a href="https://www.facebook.com/bthefantastico" class="fa fa-facebook"></a>
-
-</div></div>
-
+            <h4 class="center">You can also visit me here, will be happy to see you.</h4>
+            <div class="center">
+                <a href="mailto:sonawanegs95@gmail.com" class="fa fa-envelope"></a>
+                <a href="https://www.linkedin.com/in/gaurav-sonawane-884950144" class="fa fa-linkedin"></a>
+                <a href="https://www.github.com/GauravSonawane95" class="fa fa-github"></a>
+                <a href="https://www.instagram.com/bthefantastico" class="fa fa-instagram"></a>
+                <a href="https://www.facebook.com/bthefantastico" class="fa fa-facebook"></a>
+            </div>
+        </div>
     </section>
 </div>
+</body>
+</html>

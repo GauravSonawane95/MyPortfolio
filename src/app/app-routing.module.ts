@@ -4,6 +4,8 @@ import { IntroductionComponent } from './introduction/introduction.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
 
+
+
 const routes: Routes = [
  
   {path:"intro",component:IntroductionComponent},

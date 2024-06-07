@@ -1,16 +1,80 @@
-h2{
-    padding: 25px;
-     background-color:  rgb(73, 73, 73);
-     color: rgb(216, 216, 216);
-     margin-left: -20;
- }
- .card{
-   
-    margin: auto;
-    width:70% ;
- }
- p{
-    text-align: center;
-    font-family: "caveat";
-    font-size: larger;
- }
+body {
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  padding: 20px;
+}
+
+#projects {
+  background-color: rgb(240, 240, 240); /* Changed background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#projects h2 {
+  padding: 25px;
+  background-color: rgb(73, 73, 73);
+  color: rgb(216, 216, 216);
+  margin-left: -20px; /* Adjusted margin */
+  margin-top: 0; /* Added to reset margin */
+}
+
+.card {
+  margin: auto;
+  width: 70%;
+  margin-bottom: 20px; /* Added margin bottom for spacing */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Added shadow for better visualization */
+}
+
+.card p {
+  text-align: center;
+  font-family: "caveat";
+  font-size: larger;
+  margin-bottom: 0; /* Added to reset margin */
+}
+
+h2 {
+  padding: 25px;
+  background-color: rgb(73, 73, 73);
+  color: rgb(216, 216, 216);
+  margin-left: -20px;
+}
+
+.scroll {
+  word-wrap:normal;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .card {
+      width: 90%; /* Adjusted width for smaller devices */
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+      text-align: center;
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+      padding: 10px;
+  }
+
+  h2 {
+      font-size: 20px;
+      padding: 15px;
+  }
+
+  .skill-card {
+      max-width: 100%;
+      margin: 5px 0;
+  }
+
+  .download-btn {
+      font-size: 14px;
+  }
+}
+
