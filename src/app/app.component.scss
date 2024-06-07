@@ -33,7 +33,6 @@ body {
 .content {
     height: auto;
     padding: 20px;
-    width: auto;
     margin-left: 320px; /* Adjusted margin to align with the navbar width */
 }
 
@@ -91,10 +90,11 @@ h2 {
     .content {
         
         margin-left: 0px;
-        margin-top: 200px;
-        position: fixed;
+        margin-top: 230px;
+        position: static;
         display:flex ;
-        
+        overflow: scroll;
+        height: auto;
         top: 200px;
         padding: 20px;
          /* Adjusted margin to align with the navbar width */
@@ -132,11 +132,12 @@ h2 {
     .content {
         
         margin-left: 0px;
-        margin-top: 200px;
-        position: fixed;
+        margin-top: 230px;
+        position: static;
         display:flex ;
-        
+        overflow: scroll;
         top: 200px;
+        height: auto;
         padding: 20px;
          /* Adjusted margin to align with the navbar width */
     }
