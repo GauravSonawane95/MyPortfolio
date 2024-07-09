@@ -18,12 +18,19 @@
             • Ability to work collaboratively in a team environment.
         </p>
 
+        
+    <div class="box">
         <div class="skills-container">
-            <div class="card p-4 skill-card" *ngFor="let item of skills">
+            <div class="card" *ngFor="let item of skills">
+                <h3 class="title">{{ item.name }}</h3>
+                <div class="bar">
+                  <div class="emptybar"></div>
+                  <div class="filledbar"></div>
+                </div>
                 <img class="card-img-top skill-img" [src]="item.img" alt="{{item.name}}">
-                <p class="card-text skill-text">{{item.name}}</p>
-            </div>
+              </div>
         </div>
+    </div>
 
         <h4 class="mt-2">Education</h4>
         <p>MCA graduate from D Y Patil Institute of MCA and Management with a strong foundation in computer applications and technology.</p>
@@ -35,7 +42,13 @@
         <p>Jalgaon, Maharashtra</p>
         <br>
         <a href="/assets/GSSResume.pdf" download="GSSResume.pdf">
-            <button class="btn btn-secondary download-btn"><i>DOWNLOAD RESUME</i></button>
+            <button class="button">
+                <span class="button_lg">
+                    <span class="button_sl"></span>
+                    <span class="button_text">Download Resume</span>
+                </span>
+            </button>
+              
         </a>
     </div>
 </div>
