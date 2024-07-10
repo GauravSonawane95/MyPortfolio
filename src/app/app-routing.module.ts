@@ -8,10 +8,10 @@ import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
  
-  {path:"intro",component:IntroductionComponent},
-  {path:"project",component:ProjectComponent},
-  {path:"contact",component:ContactComponent},
-  {path:"",component:IntroductionComponent},
+  {path:"intro",component:IntroductionComponent,data: { title: 'Introduction' }},
+  {path:"project",component:ProjectComponent,data: { title: 'Projects' }},
+  {path:"contact",component:ContactComponent,data: { title: 'Contact' }},
+  { path: '', redirectTo: '/intro', pathMatch: 'full' },
 ];
 
 @NgModule({

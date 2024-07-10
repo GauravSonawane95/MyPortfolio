@@ -2,6 +2,15 @@ body{
     width: 700px;
 }
 
+.imgav{
+    
+    height: 300px;
+    width: 170px;
+    position: absolute;
+    
+    left: 83%;
+    
+}
 //btnhappy
 .button {
     width: 100%;
@@ -183,25 +192,88 @@ h2 {
   .card {
     display: flex;
     height: 130px;
-    width:120px;
-    background-color: #ffffff;
-    border:0.5px solid #0f1923;
+    width:100px;
+    background-color: #373842;
+    border:1px solid #0f1923;
    margin: auto;
-
+    color: #fff;
     transition: 0.4s ease-out;
-    position: relative;
+    position:relative                                                                                                                                                                                                                                                                                          m ;
     left: 0px;
   }
   
+  .card:not(:first-child) {
+      margin-left: -50px;
+  }
+  
+  .card:hover {
+    transform: translateY(-20px);
+    transition: 0.4s ease-out;
+  }
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 50px;
+    transition: 0.4s ease-out;
+  }
+  
   .title {
-    color: rgb(3, 3, 3);
+    color: white;
     font-weight: 12px;
     position: absolute;
     left: 20px;
+   
     top: 15px;
     font-size: 12px;
   }
   
+  .bar {
+    position: absolute;
+    top: 105px;
+    left: 20px;
+    height: 5px;
+    width: 60px;
+  }
+  
+  .emptybar {
+    background-color: #2e3033;
+    width: 60px;
+    height: 100%;
+  }
+  
+  .filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(134, 137, 138);
+    background: linear-gradient(90deg, rgb(152, 153, 153) 0%, rgb(151, 107, 155) 65%, rgb(65, 209, 214) 100%);
+    transition: 0.6s ease-out;
+  }
+  
+  .card:hover .filledbar {
+    width: 60px;
+    transition: 0.4s ease-out;
+  }
+  
+  
+  .stroke {
+    stroke: white;
+    stroke-dasharray: 360;
+    stroke-dashoffset: 360;
+    transition: 0.6s ease-out;
+  }
+  
+  svg {
+    fill: #17141d;
+    stroke-width: 2px;
+  }
+  
+  .card:hover .stroke {
+    stroke-dashoffset: 100;
+    transition: 0.6s ease-out;
+  }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {

@@ -2,6 +2,43 @@ body {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
 }
+
+//upperDiv
+.topavatar{
+    background-image: url('https://wallpapercave.com/wp/wp2729921.gif');
+      height: 200px;
+      width: 100%;
+      background-size:cover;
+      border-radius: 23px;
+      margin-left: -20px;
+      background-position-y:-350px ;
+      display: flex;
+  }
+  .divav{
+      position: relative;
+      width: 82.20%;
+      top:123px;
+      height: 88px;
+      background-color: #7D8082;
+      border-radius: 20px 0px 20px 0px;
+      
+      border-left: 5px solid white;
+      border-top: 5px solid white;
+      border-right: 5px solid white;
+      z-index: 0;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  .divav h1{
+      top: 30px;
+      left:35px;
+      font-size: 2 rem;
+      
+      letter-spacing: 10px;
+      color: white;
+      position: relative;
+      text-transform: uppercase;
+  }
+///////////////
 //Footer
 
 .a{
@@ -10,12 +47,12 @@ body {
 .site-footer
 {
   background-image:  linear-gradient(rgba(0, 0, 0, 0.7),
-  rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1532985906464-90743fab67c9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  rgba(0, 0, 0, 0.7)), url('https://c4.wallpaperflare.com/wallpaper/152/395/687/black-dark-minimalism-terry-pratchett-wallpaper-preview.jpg');
   padding:45px 0 20px;
  background-size: auto;
   font-size:15px;
   line-height:24px;
-  background-position-y: -20px;
+ background-size: 100% 100%;
   color:#bbbaba;
 
 }
@@ -262,7 +299,7 @@ h2 {
     .content {
         
         margin-left: 0px;
-        margin-top: 230px;
+        margin-top: 0px;
         position: static;
         display:flex ;
         overflow: scroll;
@@ -304,7 +341,7 @@ h2 {
     .content {
         
         margin-left: 0px;
-        margin-top: 230px;
+        margin-top: 390px;
         position: static;
         display:flex ;
         overflow: scroll;
@@ -313,4 +350,25 @@ h2 {
         padding: 20px;
          /* Adjusted margin to align with the navbar width */
     }
+    .topavatar{
+        position:absolute;
+    background-image: url('https://wallpapercave.com/wp/wp2729921.gif');
+   height: 100px;
+      width: 90%;
+ margin-top: -120px;
+      left: 35px;
+      
+     
+  }
+  .divav{
+      position: relative;
+     top:50px;
+     height: 60px;
+      width: 82.20%;
+  }
+  .divav h1{
+      font-size: medium;
+     
+      
+  }
 }
