@@ -151,23 +151,17 @@ h2 {
     word-wrap: break-word;
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
 
-.skill-card {
-    max-width: 12rem;
-    display: inline-block;
-    margin: 10px;
-}
+
+
 
 .skill-img {
     height: 3rem;
     width: auto;
     margin: auto;
     display: flex;
+    margin-top: 40px;
+    
 }
 
 .skill-text {
@@ -184,38 +178,27 @@ h2 {
     height: 300px;
     width: 500px;
     top: 60px;
-    left: calc(20% - 200px);
-   
+
+  
+    
+  }
+
+
+  
+  .card {
+    height: 120px;
+    width:100px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #373842;
+    border:1px solid #0f1923;
+position:relative;
+    color: #fff; 
     
   }
   
-  .card {
-    display: flex;
-    height: 130px;
-    width:100px;
-    background-color: #373842;
-    border:1px solid #0f1923;
-   margin: auto;
-    color: #fff;
-    transition: 0.4s ease-out;
-    position:relative                                                                                                                                                                                                                                                                                          m ;
-    left: 0px;
-  }
   
-  .card:not(:first-child) {
-      margin-left: -50px;
-  }
   
-  .card:hover {
-    transform: translateY(-20px);
-    transition: 0.4s ease-out;
-  }
-  
-  .card:hover ~ .card {
-    position: relative;
-    left: 50px;
-    transition: 0.4s ease-out;
-  }
   
   .title {
     color: white;
@@ -227,53 +210,12 @@ h2 {
     font-size: 12px;
   }
   
-  .bar {
-    position: absolute;
-    top: 105px;
-    left: 20px;
-    height: 5px;
-    width: 60px;
-  }
   
-  .emptybar {
-    background-color: #2e3033;
-    width: 60px;
-    height: 100%;
-  }
-  
-  .filledbar {
-    position: absolute;
-    top: 0px;
-    z-index: 3;
-    width: 0px;
-    height: 100%;
-    background: rgb(134, 137, 138);
-    background: linear-gradient(90deg, rgb(152, 153, 153) 0%, rgb(151, 107, 155) 65%, rgb(65, 209, 214) 100%);
-    transition: 0.6s ease-out;
-  }
-  
-  .card:hover .filledbar {
-    width: 60px;
-    transition: 0.4s ease-out;
-  }
+
+ 
   
   
-  .stroke {
-    stroke: white;
-    stroke-dasharray: 360;
-    stroke-dashoffset: 360;
-    transition: 0.6s ease-out;
-  }
-  
-  svg {
-    fill: #17141d;
-    stroke-width: 2px;
-  }
-  
-  .card:hover .stroke {
-    stroke-dashoffset: 100;
-    transition: 0.6s ease-out;
-  }
+ 
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
