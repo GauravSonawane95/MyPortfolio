@@ -1,12 +1,13 @@
 <div class="content">
+    <p class="para1">Check out some of my amazing projects below:</p>
     <section id="projects bg">
 
-        <p class="para1">Check out some of my amazing projects below:</p>
-        <div class="card mt-4" *ngFor="let items of projects">
+        
+        <div class="card " *ngFor="let items of projects">
             <div class="card-body">
 
-                <h5 class="card-title">{{items.name}}</h5>
-                <p class="card-text">{{items.Desc}}
+                <h5 class="card-title">{{items.Name}}</h5>
+                <p class="card-text">{{items.Description}}
                     <br>
                     {{items.Dev}}
                 </p>
