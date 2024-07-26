@@ -3,49 +3,18 @@
     <section id="projects bg">
         
         <p class="para1">Check out some of my amazing projects below:</p>
-        <div class="card mt-4">
+        <div class="card mt-4" *ngFor="let items of projects">
             <div class="card-body">
              
-                <h5 class="card-title">Car Insurance System</h5>
-                <p class="card-text">A web-based car insurance management system using Angular, HTML, CSS, and
-                    Bootstrap.Designing and implementing the user interface to create a responsive and visually
-                    appealing application. Assisted in developing reusable components and services for data retrieval,
-                    validation, and manipulation, ensuring code organization and maintainability. Worked on integrating
-                    the application with backend APIs and implementing basic authentication features. gained practical
-                    experience in using Angular, Typescript, JavaScript, HTML, CSS, Bootstrap, Git.
+                <h5 class="card-title">{{items.name}}</h5>
+                <p class="card-text">{{items.Desc}}
                 <br>
-                Developed in Angular
-               <br> IDE used Microsoft Visual Studio Code</p>
+               {{items.Dev}}
+             
             </div>
         </div>
-        <div class="card mt-4">
-            <div class="card-body">
-                
-                <h5 class="card-title">Bkepickers</h5>
-                <p class="card-text">A website that helps user to get more information about the bike which they're going to buy.
-                    <br> Developed using HTML5,CSS,JavaScript
-                </p>
-            </div>
-        </div>
-        <div class="card mt-4">
-            <div class="card-body">
-                
-                <h5 class="card-title">Web Portal</h5>
-                <p class="card-text">Designed a portal to help institutes sell their products online for insuring more profit and reduced manual work.
-                    <br> Developed in Asp.net
-                    <br> IDE used MS Visual Studio
-                </p>
-            </div>
-        </div>
-        <div class="card mt-4">
-            <div class="card-body">
-                
-                <h5 class="card-title">Nameless Helper</h5>
-                <p class="card-text">A website for people who want to donate but do not want to disclose their identity.
-                    <br>Developed using HTML5,CSS,JavaScript
-                </p>
-            </div>
-        </div>
+        
+    
         
     </section>
 
