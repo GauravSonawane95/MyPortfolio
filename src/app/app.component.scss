@@ -3,15 +3,31 @@ body {
     scroll-behavior: smooth;
 }
 
+.headingback{
+  font-size: 6rem;
+  position: relative;
+  text-align: right;
+  bottom: 85px;
+  opacity: 0.2;
+  z-index: 2;
+  right: 45px;
+  
+  text-transform: uppercase;
+}
+.content{
+  transition:1s;
+}
+
+
 //upperDiv
 .topavatar{
-    background-image: url('https://wallpapercave.com/wp/wp2729921.gif');
+    background-image: url('https://wallpapercave.com/wp/wp7516718.jpg');
       height: 200px;
       width: 100%;
       background-size:cover;
       border-radius: 23px;
       margin-left: -20px;
-      background-position-y:-350px ;
+      background-position-y:-180px ;
       display: flex;
   }
   .divav{
@@ -32,7 +48,7 @@ body {
       top: 30px;
       left:35px;
       font-size: 2 rem;
-      
+      z-index: 5;
       letter-spacing: 10px;
       color: white;
       position: relative;
@@ -56,6 +72,7 @@ body {
   color:#bbbaba;
 
 }
+
 .site-footer hr
 {
   border-top-color:#bbb;
@@ -370,5 +387,13 @@ h2 {
       font-size: medium;
      
       
+  }
+  .headingback{
+    font-size: 3rem;
+    
+    bottom: 30px;
+   
+   
+    right: 20px;
   }
 }
